@@ -1,0 +1,136 @@
+
+#properties {
+	float: left;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+#select-color {
+	/*float: left;*/
+	margin: 10px 0;
+	font-family: Verdana;
+    font-size: 10px;
+	display: table;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+#select-color .item {
+	border: 1px solid #dddddd;
+	padding: 1px 3px;
+	float: left;
+	margin-right: 1px;
+}
+
+#select-color .item.label {
+	border: none;
+}
+
+.sprite-properties {
+    font-family: Verdana;
+    font-size: 10px;
+	margin-bottom: 1px;
+}
+
+.selectable {
+	cursor: pointer;
+}
+
+.selectable:hover{
+	background-color: #ffeeee;
+}
+
+.sprite-properties .item {
+	border: 1px solid #dddddd;
+	padding: 1px 3px;
+	float: left;
+	margin-right: 1px;
+}
+
+.sprite-properties .item .sub-item {
+	/*border: 1px dotted #CCCCCC;*/
+	margin: 0 2px;
+	padding: 0 2px;
+}
+
+.swatch {
+    height: 6px;
+    width: 12px;
+	margin: 0 1px;
+	cursor: pointer;
+}
+
+.swatch.vic-1 {
+	border: 1px solid #cccccc;
+	width: 10px;
+}
+
+.selected {
+	color: #dd4400;
+}
+
+.item.selected {
+	background-color: #ffeeee;
+}
+
+.swatch.selected {
+    height: 12px;
+}
+
+.swatch.vic-1.selected {
+	height: 10px;
+}
+
+.slot {
+    font-family: Verdana;
+    font-size: 10px;
+	background-image: url('bg-light.png');
+    width: 50px;
+    height: 50px;
+	border: 1px dotted #888888;
+	margin: 1px;
+	float: left;
+}
+
+.joystick {
+	position: relative;
+	float: left;
+	width: 21px;
+	height: 12px;
+	margin-left: 5px;
+	/*background-color: #cccccc;*/
+}
+
+.joystick .direction {
+	width: 5px;
+	height: 5px;
+	background-color: #888888;
+	position: absolute;
+	cursor: pointer;
+	background-image: url('arrows.png');
+}
+
+.joystick .direction.up {
+	left: 8px;
+	top: 0px;
+	background-position: 0 0;
+}
+
+.joystick .direction.down {
+	left: 8px;
+	top: 7px;
+	background-position: -5px 0;
+}
+
+.joystick .direction.left {
+	left: 0px;
+	top: 4px;
+	background-position: -10px 0;
+}
+
+.joystick .direction.right {
+	left: 16px;
+	top: 4px;
+	background-position: -15px 0;
+}
+

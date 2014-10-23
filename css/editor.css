@@ -1,0 +1,87 @@
+ 
+ #editor {
+	background-color: #ffffff;
+	background-image: url('bg-light.png');
+	float: left;
+	position: relative;
+	width: 1201px;
+	height: 631px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+.sprite {
+  position: absolute;
+  width: 241px;
+  height: 211px;
+  margin: 0px;
+  border: 1px solid #aaaaaa;
+}
+
+.no-border .sprite {
+  border: 1px dotted #aaaaaa;
+  width: 240px;
+  height: 210px;
+}
+
+.pixel {
+  position : absolute;
+  width : 9px;
+  height : 9px;
+  border : 1px dotted #666666;
+}
+
+.no-border .pixel {
+  width : 10px;
+  height : 10px;
+  border : none;
+}
+
+.multicolor .pixel {
+  width: 19px;
+}
+
+.no-border .multicolor .pixel {
+	width: 20px;
+}
+
+.double-x .pixel {
+  width: 19px;
+}
+
+.no-border .double-x .pixel {
+  width: 20px;
+}
+
+.multicolor.double-x .pixel {
+  width: 39px;
+}
+
+.no-border .multicolor.double-x .pixel {
+  width: 40px;
+}
+
+.double-y .pixel {
+  height: 19px;
+}
+
+.no-border .double-y .pixel {
+  height: 20px;
+}
+
+.sprite.double-x {
+  width: 481px;
+}
+
+.no-border .sprite.double-x {
+  width: 480px;
+}
+
+.sprite.double-y {
+  height: 421px;
+}
+
+.no-border .sprite.double-y {
+  height: 420px;
+}
+

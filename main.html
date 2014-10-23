@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>C64 Sprite editor</title>
+	<meta charset="utf-8">
+
+	<script src="js/prototype.js"></script>
+	<script src="js/sprite-model.js"></script>
+	<script src="js/sprite-view.js"></script>
+	<script src="js/sprite-properties.js"></script>
+	<script src="js/main.js"></script>
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<link rel="stylesheet" href="css/properties.css" type="text/css">
+	<link rel="stylesheet" href="css/editor.css" type="text/css">
+</head>
+<body>
+
+<div id="menu">
+	<div class="item" onclick="clickImport();">Import JSON</div>
+	<div class="item" onclick="clickExport();">Export JSON</div>
+	<div class="item" onclick="clickOutputHex();">Output sprite hex data</div>
+	<div class="clear"></div>
+</div>
+
+<div id="output">
+	<div class="header">
+		<div class="title">Output</div>
+		<div class="close" onclick="$('output').hide();">X</div>
+		<div class="clear"></div>
+	</div>
+	<div id="output-content">
+		todo: drag and draw
+	</div>
+</div>
+
+<div id="properties">
+	<div id="sprite-properties-0" class="sprite-properties"></div>
+	<div id="sprite-properties-1" class="sprite-properties"></div>
+	<div id="sprite-properties-2" class="sprite-properties"></div>
+	<div id="sprite-properties-3" class="sprite-properties"></div>
+	<div id="sprite-properties-4" class="sprite-properties"></div>
+	<div id="sprite-properties-5" class="sprite-properties"></div>
+	<div id="sprite-properties-6" class="sprite-properties"></div>
+	<div id="sprite-properties-7" class="sprite-properties"></div>
+	<div id="sprite-properties-8" class="sprite-properties"></div>
+</div>
+
+<div class="clear"></div>
+
+<div id="select-color">
+	<div class="item label">Draw with</div>
+	<div id="select-drawing-color-0" class="item selectable" onclick="clickSelectDrawingColor(0)">Transparent</div>
+	<div id="select-drawing-color-3" class="item selectable" onclick="clickSelectDrawingColor(3)">Sprite color</div>
+	<div id="select-drawing-color-1" class="item selectable" onclick="clickSelectDrawingColor(1)">Multi color #1</div>
+	<div id="multi-color-1" class="sprite-properties left"></div>
+	<div id="select-drawing-color-2" class="item selectable" onclick="clickSelectDrawingColor(2)">Multi color #2</div>
+	<div id="multi-color-2" class="sprite-properties left"></div>
+	<div class="left">&nbsp|&nbsp</div>
+	<div id="toggle-pixel-pines" class="item selectable" onclick="clickTogglePixelLines()">Toggle pixel lines</div>
+</div>
+
+<div class="clear"></div>
+
+<div id="editor">
+	<div class="sprite" id="sprite-7"></div>
+	<div class="sprite" id="sprite-6"></div>
+	<div class="sprite" id="sprite-5"></div>
+	<div class="sprite" id="sprite-4"></div>
+	<div class="sprite" id="sprite-3"></div>
+	<div class="sprite" id="sprite-2"></div>
+	<div class="sprite" id="sprite-1"></div>
+	<div class="sprite" id="sprite-0"></div>
+</div>
+
+<body>
+
+<script>
+
+	setupEditor();
+
+</script>
+
+</html>

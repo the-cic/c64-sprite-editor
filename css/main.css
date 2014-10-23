@@ -1,0 +1,103 @@
+.left {
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+
+.vic-0 {
+  background-color: #000000;
+}
+.vic-1 {
+  background-color: #ffffff;
+}
+.vic-2 {
+  background-color: #880000;
+}
+.vic-3 {
+  background-color: #AAFFEE;
+}
+.vic-4 {
+  background-color: #CC44CC;
+}
+.vic-5 {
+  background-color: #00CC55;
+}
+.vic-6 {
+  background-color: #0000AA;
+}
+.vic-7 {
+  background-color: #EEEE77;
+}
+
+.vic-8 {
+  background-color: #DD8855;
+}
+.vic-9 {
+  background-color: #664400;
+}
+.vic-10 {
+  background-color: #FF7777;
+}
+.vic-11 {
+  background-color: #333333;
+}
+.vic-12 {
+  background-color: #777777;
+}
+.vic-13 {
+  background-color: #AAFF66;
+}
+.vic-14 {
+  background-color: #0088FF;
+}
+.vic-15 {
+  background-color: #BBBBBB;
+}
+
+#menu {
+	margin: 10px 0;
+	font-family: Verdana;
+    font-size: 12px;
+	display: table;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+#menu .item {
+	border: 1px solid #dddddd;
+	padding: 1px 3px;
+	float: left;
+	cursor: pointer;
+	margin-left: 1px;
+}
+
+#output {
+	font-size: 10px;
+	border: 1px solid #dddddd;
+	margin: 10px 0;
+	font-family: Verdana;
+	display: table;
+	max-width: 1201px;
+}
+
+#output .header {
+	border-bottom: 1px dotted #dddddd;
+	padding: 2px;
+}
+
+#output .header .title {
+	float: left;
+}
+
+#output .header .close {
+	cursor: pointer;
+	float: right;
+	margin-left: 5px;
+}
+
+#output-content {
+	padding: 2px;
+}
+
